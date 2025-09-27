@@ -12,46 +12,114 @@
 
 <body>
 	<div class="reveal">
-		<div class="reveal">
-			<div class="slides">
-				<section data-background="#f0f4f5"">
-					<section>
-						<p>Equipe 01</p>
-						<div class=" fragment">
-					<p>Construindo Slides com Reveal.JS </p>
+		<div class="slides">
+			<section data-background="#f0f4f5">
+				<h1>Equipe 01</h1>
+				<div class="fragment">
+					<p>Construindo Slides com Reveal.JS</p>
 					<p>na IDE Eclipse</p>
 					<img src="assets/images/eclipse.png" />
-			</div>
-			<p class="fragment">Carlos Eduardo - Thiago Lima - Sidney Amorim
-			</p>
+				</div>
+				<p class="fragment">Carlos Eduardo - Thiago Lima - Sidney Amorim</p>
 			</section>
-			<section>Slide 2</section>
-			<section>Slide 3</section>
-			<section>
-				<h2>Contras de Usar o Eclipse</h2>
-				<ul>
-					<li><strong> Pesado e menos fluido
-						</strong></li>
-					<li><strong> Suporte limitado a web moderno
-						</strong>
-					</li>
-					<li><strong> Curva de aprendizado extra
 
-					</li>
-					<li><strong> Pré-visualização da apresentação
-						</strong>
-					</li>
-					<li><strong> Publicação no GitHub Pages ou similar
-						</strong> </li>
-					</li>
+			<section data-background="#f0f4f5">
+				<div style="display: flex; flex-direction: row;">
+					<div class="">
+						<img src="assets/images/gif.gif" width="100%">
+					</div>
+					<div>
+						<ul>
+							<li>15 Slides</li>
+							<li>Elementos de imagem (Imagem estática e GIF’s)</li>
+							<li>Fundos coloridos</li>
+							<li>Fragmentos:</li>
+							<li>Transição horizontal vertical, Zoom, Convex e Fade</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section data-background="#f0f4f5" data-transition="fade">
+				<pre><code data-trim class="language-html">
+						&lt;section data-background="#f0f4f5"&gt;
+						  &lt;h1&gt;Equipe 01&lt;/h1&gt;
+						  &lt;div class="fragment"&gt;
+						    &lt;p&gt;Construindo Slides com Reveal.JS&lt;/p&gt;
+						    &lt;p&gt;na IDE Eclipse&lt;/p&gt;
+						    &lt;img src="assets/images/eclipse.png" /&gt;
+						  &lt;/div&gt;
+						  &lt;p class="fragment"&gt;Carlos, Thiago e Sidney&lt;/p&gt;
+						&lt;/section&gt;
+						  </code></pre>
+			</section>
+
+			<section data-background="#f0f4f5" data-transition="zoom">
+				<h2>Prós de Usar o Eclipse</h2>
+				<ul>
+					<li class="fragment"><span class="fragment">Ambiente robusto para aplicações JAVA EE, diversas
+							funcionalidades</span></li>
+					<li class="fragment"><span class="fragment">Suporte ao GIT nativo, com ressalvas</span></li>
+					<li class="fragment"><span class="fragment">Suporte a extensões e agentes de IA</span></li>
+					<li class="fragment"><span class="fragment">Padronização Corporativa</span></li>
+					<li class="fragment"><span class="fragment">Consolidação no mercado</span></li>
 				</ul>
+			</section>
+			<section data-background="#f0f4f5">
+				<section data-transition="convex">
+					<h1>Contras de Usar o Eclipse</h1>
+				</section>
+
+				<section>
+					<h2>Interface não amigável para usuário iniciante</h2>
+					<img src="assets/images/interface.png" />
+				</section>
+
+				<section>
+					<h2>Pesado e menos fluido para atividades simples, a exemplo de uma POC</h2>
+				</section>
+
+				<section>
+					<h2>Limitação a extensões de desenvolvimento para web moderno</h2>
+					<img src="assets/images/suporte.png" width="60%" />
+				</section>
+
+				<section>
+					<h2>Auto complete não nativo para html, somente após integração com Plugin</h2>
+				</section>
+
+				<section>
+					<h2>Alguns bugs após alterar o tema do sistema</h2>
+					<p>Ex.: Fechou o projeto automaticamente após realizar a troca do theme de DARK para Classic</p>
+					<img src="assets/images/bug-theme.webp" width="60%" />
+				</section>
+
+				<section>
+					<h2>GIT embutido, porém de difícil usabilidade</h2>
+					<img src="assets/images/git.png" width="60%" />
+				</section>
+				<section>
+					<img src="assets/images/erro-pull.png" width="100%" />
+				</section>
+				<section>
+					<img src="assets/images/terminal.png" width="100%" />
+				</section>
+				<section>
+					<img src="assets/images/provide.png" width="100%" />
+				</section>
+			</section>
+			<section data-background="#f0f4f5">
+				<img src="assets/images/mizael.gif" width="100%">
 			</section>
 		</div>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
 	<script>
-		Reveal.initialize();
+		Reveal.initialize({
+			plugins: [RevealHighlight]
+		});
 	</script>
 </body>
 
